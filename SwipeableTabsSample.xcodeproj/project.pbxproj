@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1D1D602BF3888D0012E3F6 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D1D5F2BF3888D0012E3F6 /* View+Extensions.swift */; };
 		DF24B6C12BF35C6300C2B286 /* SwipeableTabsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24B6C02BF35C6300C2B286 /* SwipeableTabsSampleApp.swift */; };
 		DF24B6C32BF35C6300C2B286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24B6C22BF35C6300C2B286 /* ContentView.swift */; };
 		DF24B6C52BF35C6400C2B286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF24B6C42BF35C6400C2B286 /* Assets.xcassets */; };
 		DF24B6C82BF35C6400C2B286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF24B6C72BF35C6400C2B286 /* Preview Assets.xcassets */; };
 		DF24B6CF2BF35CB200C2B286 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24B6CE2BF35CB200C2B286 /* Tab.swift */; };
+		DF24B6D12BF380F700C2B286 /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24B6D02BF380F700C2B286 /* SegmentedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF1D1D5F2BF3888D0012E3F6 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		DF24B6BD2BF35C6300C2B286 /* SwipeableTabsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeableTabsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF24B6C02BF35C6300C2B286 /* SwipeableTabsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableTabsSampleApp.swift; sourceTree = "<group>"; };
 		DF24B6C22BF35C6300C2B286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF24B6C42BF35C6400C2B286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF24B6C72BF35C6400C2B286 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF24B6CE2BF35CB200C2B286 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		DF24B6D02BF380F700C2B286 /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				DF24B6C02BF35C6300C2B286 /* SwipeableTabsSampleApp.swift */,
 				DF24B6C22BF35C6300C2B286 /* ContentView.swift */,
+				DF24B6D02BF380F700C2B286 /* SegmentedView.swift */,
 				DF24B6CE2BF35CB200C2B286 /* Tab.swift */,
+				DF1D1D5F2BF3888D0012E3F6 /* View+Extensions.swift */,
 				DF24B6C42BF35C6400C2B286 /* Assets.xcassets */,
 				DF24B6C62BF35C6400C2B286 /* Preview Content */,
 			);
@@ -143,6 +149,8 @@
 				DF24B6CF2BF35CB200C2B286 /* Tab.swift in Sources */,
 				DF24B6C32BF35C6300C2B286 /* ContentView.swift in Sources */,
 				DF24B6C12BF35C6300C2B286 /* SwipeableTabsSampleApp.swift in Sources */,
+				DF1D1D602BF3888D0012E3F6 /* View+Extensions.swift in Sources */,
+				DF24B6D12BF380F700C2B286 /* SegmentedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
