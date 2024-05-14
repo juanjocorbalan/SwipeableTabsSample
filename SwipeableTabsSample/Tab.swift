@@ -7,21 +7,10 @@
 
 import SwiftUI
 
-enum Tab: Int, CaseIterable {
+enum Tab: String, CaseIterable {
     case audio
     case video
     case photo
-
-    var title: String {
-        switch self {
-        case .audio:
-            return "Audio"
-        case .video:
-            return "Video"
-        case .photo:
-            return "Photo"
-        }
-    }
 
     var image: String {
         switch self {

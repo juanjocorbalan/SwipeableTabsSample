@@ -14,9 +14,8 @@ struct SampleTabView: View {
         ScrollView(.vertical) {
             LazyVStack {
                 ForEach(1...20, id: \.self) { _ in
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 12)
                         .fill(tab.color)
-                        .opacity(0.5)
                         .frame(height: 100)
                 }
             }
