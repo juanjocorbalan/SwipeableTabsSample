@@ -5,7 +5,7 @@
 //  Created by Juanjo Corbalan on 14/5/24.
 //
 
-import Foundation
+import SwiftUI
 
 enum Tab: Int, CaseIterable {
     case audio
@@ -31,6 +31,17 @@ enum Tab: Int, CaseIterable {
             return "video"
         case .photo:
             return "photo"
+        }
+    }
+
+    var color: Color {
+        switch self {
+        case .audio:
+            return .mint
+        case .video:
+            return .pink
+        case .photo:
+            return .indigo
         }
     }
 }

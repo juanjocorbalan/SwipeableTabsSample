@@ -19,8 +19,20 @@ struct ContentView: View {
 
             SegmentedView(tabs: Tab.allCases, selected: $selectedTab)
                 .padding(.horizontal)
+
+            ScrollView(.horizontal) {
+                LazyHStack(spacing: 0) {
+                    ForEach(Tab.allCases, id: \.rawValue) { tab in
+                        SampleTabView(tab: tab)
+                    }
+                }
+                .scrollTargetLayout()
+            }
+            .scrollIndicators(.hidden)
+            .scrollTargetBehavior(.paging)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .ignoresSafeArea(edges: .bottom)
     }
 }
 
