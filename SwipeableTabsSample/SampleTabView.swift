@@ -19,9 +19,8 @@ struct SampleTabView: View {
                         .frame(height: 100)
                 }
             }
-            .padding(.horizontal)
+            .padding([.horizontal, .bottom])
         }
-        .containerRelativeFrame(.horizontal)
         .id(tab)
     }
 }

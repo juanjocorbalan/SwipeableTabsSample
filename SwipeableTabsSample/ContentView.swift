@@ -12,20 +12,22 @@ struct ContentView: View {
     @State private var selectedProgress: CGFloat = 0
 
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Multimedia")
-                .font(.largeTitle.bold())
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal)
+        GeometryReader { proxy in
+            VStack(spacing: 20) {
+                Text("Multimedia")
+                    .font(.largeTitle.bold())
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal)
 
-            SegmentedView(tabs: Tab.allCases, progress: selectedProgress, selected: $selectedTab)
-                .padding(.horizontal)
+                SegmentedView(tabs: Tab.allCases, progress: selectedProgress, selected: $selectedTab)
+                    .padding(.horizontal)
 
-            GeometryReader { proxy in
                 ScrollView(.horizontal) {
                     LazyHStack(spacing: 0) {
                         ForEach(Tab.allCases, id: \.rawValue) { tab in
                             SampleTabView(tab: tab)
+                                .containerRelativeFrame(.horizontal)
+
                         }
                     }
                     .overlay {
@@ -39,15 +41,15 @@ struct ContentView: View {
                                 }
                         }
                     }
+                    .safeAreaPadding(.bottom, proxy.safeAreaInsets.bottom)
                     .scrollTargetLayout()
                 }
                 .scrollPosition(id: $selectedTab)
                 .scrollIndicators(.hidden, axes: .horizontal)
                 .scrollTargetBehavior(.paging)
-           }
+            }
+            .ignoresSafeArea(edges: .bottom)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .ignoresSafeArea(edges: .bottom)
     }
 }
 
