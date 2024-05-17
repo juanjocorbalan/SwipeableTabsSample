@@ -27,7 +27,6 @@ struct ContentView: View {
                         ForEach(Tab.allCases, id: \.rawValue) { tab in
                             SampleTabView(tab: tab)
                                 .containerRelativeFrame(.horizontal)
-
                         }
                     }
                     .overlay {
@@ -46,7 +45,7 @@ struct ContentView: View {
                 }
                 .scrollPosition(id: $selectedTab)
                 .scrollIndicators(.hidden, axes: .horizontal)
-                .scrollTargetBehavior(.paging)
+                .scrollTargetBehavior(.viewAligned)
             }
             .ignoresSafeArea(edges: .bottom)
         }

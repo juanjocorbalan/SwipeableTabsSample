@@ -31,7 +31,6 @@ struct SegmentedView: View {
         }
     }
 
-    @ViewBuilder
     private func segmentsView() -> some View {
         HStack(spacing: 0) {
             ForEach(tabs, id: \.rawValue) { tab in
